@@ -23,8 +23,8 @@ O projeto simula um cenário de análise de vendas para uma empresa de tecnologi
 
 ## 📁 Estrutura do Projeto
 
--📁 **Projeto**
-  -📁 **data_raw**: Arquivo bruto para exploração
-  -📁 **data_processed**: Arquivo final gerado para melhor visualização
-  -📁 **notebooks**: Pasta com os notebooks utilizados no projeto
-  -📁 **script**: Script para automatização do processo
+- 📁 **Projeto**
+  - 📁 **data_raw**: Arquivo bruto para exploração
+  - 📁 **data_processed**: Arquivo final gerado para melhor visualização
+  - 📁 **notebooks**: Pasta com os notebooks utilizados no projeto
+  - 📁 **script**: Script para automatização do processo
