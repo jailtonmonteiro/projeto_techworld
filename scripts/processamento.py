@@ -1,7 +1,8 @@
 from trata_dados import Dados
 import pandas as pd
 
-local = 'data_raw/vendas2024.csv'
+ano = int(input('Digite o ano que deseja ver o relatório: '))
+local = f'data_raw/vendas{ano}.csv'
 
 df = Dados(local)
 print(df.exibir())
