@@ -6,7 +6,7 @@ class Dados:
         self.df = self.__trataData()
         self.catMaisVendida = self.__categoriasVendidas()
         self.ticketM = self.__ticketMedio()
-        self.receitaMensal = self.__receitaMes()
+        self.receitaMensal = self.__receitaMes().reset_index()
         self.receitaRegiao = self.__receitaReg()
         self.pagamentoUsado = self.__metodoPag()
         self.maisVendido = self.__maisVend()
@@ -58,7 +58,7 @@ class Dados:
     
     # Apontar o produto campeão de vendas
     def __maisVend(self):
-        maisV = self.df.groupby("product_name")["quantity"].sum().head(1)
+        maisV = self.df.groupby("product_name")["quantity"].sum()
         return maisV
     
     # Facilita exibição
